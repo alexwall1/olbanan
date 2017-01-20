@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from config import profile, key, DATABASE_URI, DEBUG, PROJECT_DIR
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 db = SQLAlchemy(app)
 
