@@ -4,7 +4,7 @@ import random
 
 from flask import Flask, render_template, request, abort
 from flask_sqlalchemy import SQLAlchemy
-from config import profile, key, DATABASE_URI, DEBUG
+from config import profile, key, DATABASE_URI, DEBUG, PROJECT_DIR
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
@@ -48,7 +48,7 @@ def bar():
     if not zone:
         abort(404)
     bar_found = None
-    with open('stations.json') as f:
+    with open(PROJECT_DIR + 'stations.json') as f:
         all_stations = json.load(f)
         stations = [x for x in all_stations if x['zone'] == zone]
         n = len(stations)
