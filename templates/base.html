@@ -32,10 +32,10 @@
           <div><img id="error-image" src="{{ url_for('static', filename='images/error.png') }}" style="display: none; padding-top: 30px; padding-bottom: 30px;" height="150" width="150" /></div>
           <div><img id="loading-image" style="display: none; padding-top: 30px; padding-bottom: 30px;" src="{{ url_for('static', filename='images/loading.gif') }}" /></div>
           <div id="result" style="display: none;">
-            <h1><span class="label label-info"><a id="company-name" target="_blank" href="#"></a></span></h1>
-            <div>
+            <h3><span class="label label-info"><a id="company-name" target="_blank" href="#"></a></span></h3>
+            <div style="padding-top:20px;">
               <img style="display: inline-block; vertical-align: middle;" src="{{ url_for('static', filename='images/metro.png') }}" height="40" width="40" />
-              <h3 style="display: inline-block; vertical-align: middle;" id="station"></h3>
+              <h4 style="display: inline-block; vertical-align: middle;" id="station"></h4>
             </div>
             <div style="padding-top: 30px; padding-bottom: 30px;">
               <a href="#" id="vote-down" style="display: inline-block; vertical-align: middle;" data-toggle="button" aria-pressed="false" class="btn btn-info btn-lg">

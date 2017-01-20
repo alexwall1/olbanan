@@ -1,15 +1,22 @@
 [
   {
-    "name": "Farsta strand",
-    "longitude": "18.10166430000004",
-    "latitude": "59.2365356",
-    "line": "Gröna",
-    "zone": "3"
-  },
-  {
     "name": "Mörby centrum",
     "longitude": "18.036117500000046",
     "latitude": "59.3982573",
+    "line": "Röda",
+    "zone": "3"
+  },
+  {
+    "name": "Danderyds sjukhus",
+    "longitude": "18.039432000000033",
+    "latitude": "59.392321",
+    "line": "Röda",
+    "zone": "3"
+  },
+  {
+    "name": "Bergshamra",
+    "longitude": "18.032709599999976",
+    "latitude": "59.3803526",
     "line": "Röda",
     "zone": "3"
   },
@@ -19,6 +26,27 @@
     "latitude": "59.3651918",
     "line": "Röda",
     "zone": "2"
+  },
+  {
+    "name": "Tekniska högskolan",
+    "longitude": "18.071596399999976",
+    "latitude": "59.3459088",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Stadion",
+    "longitude": "18.081700700000056",
+    "latitude": "59.3429669",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Östermalmstorg",
+    "longitude": "18.074082699999963",
+    "latitude": "59.3349729",
+    "line": "Röda",
+    "zone": "1"
   },
   {
     "name": "T-centralen",
@@ -33,5 +61,82 @@
     "latitude": "59.3459088",
     "line": "Röda",
     "zone": "1"
+  },
+  {
+    "name": "Gamla stan",
+    "longitude": "18.067620300000044",
+    "latitude": "59.3231599",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Slussen",
+    "longitude": "18.07214060000001",
+    "latitude": "59.31951240000001",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Mariatorget",
+    "longitude": "18.06324840000002",
+    "latitude": "59.3169863",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Zinkensdamm",
+    "longitude": "18.050152199999957",
+    "latitude": "59.3177777",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Hornstull",
+    "longitude": "18.03402140000003",
+    "latitude": "59.3158365",
+    "line": "Röda",
+    "zone": "1"
+  },
+  {
+    "name": "Liljeholmen",
+    "longitude": "18.023130100000003",
+    "latitude": "59.3107063",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Midsommarkransen",
+    "longitude": "18.012036099999932",
+    "latitude": "59.301852",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Telefonplan",
+    "longitude": "17.997235199999977",
+    "latitude": "59.29832139999999",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Hägerstensåsen",
+    "longitude": "17.979151900000033",
+    "latitude": "59.2955713",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Västertorp",
+    "longitude": "17.96666749999997",
+    "latitude": "59.291379",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Fruängen",
+    "longitude": "17.96500579999997",
+    "latitude": "59.285929",
+    "line": "Röda",
+    "zone": "3"
   }
 ]
