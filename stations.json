@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Farsta strand",
+    "longitude": "18.10166430000004",
+    "latitude": "59.2365356",
+    "line": "Gröna",
+    "zone": "3"
+  },
+  {
+    "name": "Mörby centrum",
+    "longitude": "18.036117500000046",
+    "latitude": "59.3982573",
+    "line": "Röda",
+    "zone": "3"
+  },
+  {
+    "name": "Universitetet",
+    "longitude": "18.054604400000017",
+    "latitude": "59.3651918",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "T-centralen",
+    "longitude": "18.059524399999987",
+    "latitude": "59.3306725",
+    "line": "Alla",
+    "zone": "1"
+  },
+  {
+    "name": "Tekniska högskolan",
+    "longitude": "18.071596399999976",
+    "latitude": "59.3459088",
+    "line": "Röda",
+    "zone": "1"
+  }
+]
