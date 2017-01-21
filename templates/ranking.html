@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+ <div class="table-responsive">
+  <table class="table table-condensed ">
+      <tr><th>Namn</th><th>Plats</th><th>Ranking</th></tr>
+        {% for item in bars %}
+      <tr><td>{{ item.name }}</td><td>{{ item.station }}</td><td>{{ item.vote }}</td></tr>
+        {% endfor %}
+  </table>
+</div>
+      </div>
+    </div>
+{% endblock %}

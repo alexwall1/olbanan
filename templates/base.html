@@ -21,45 +21,8 @@
     <![endif]-->
   </head>
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="inner cover">
-          <br>
-          <div id="header">
-            <img src="{{ url_for('static', filename='images/metro.png') }}" height="150" width="150" />
-            <p class="lead">Trött på nödiga hipsterhak i innerstaden?<br>Slumpa fram en hemlig bar i orten.</p>
-          </div>
-          <div><img id="error-image" src="{{ url_for('static', filename='images/error.png') }}" style="display: none; padding-top: 30px; padding-bottom: 30px;" height="150" width="150" /></div>
-          <div><img id="loading-image" style="display: none; padding-top: 30px; padding-bottom: 30px;" src="{{ url_for('static', filename='images/loading.gif') }}" /></div>
-          <div id="result" style="display: none;">
-            <h3><span class="label label-info"><a id="company-name" target="_blank" href="#"></a></span></h3>
-            <div style="padding-top:20px;">
-              <img style="display: inline-block; vertical-align: middle;" src="{{ url_for('static', filename='images/metro.png') }}" height="40" width="40" />
-              <h4 style="display: inline-block; vertical-align: middle;" id="station"></h4>
-            </div>
-            <div style="padding-top: 30px; padding-bottom: 30px;">
-              <a href="#" id="vote-down" style="display: inline-block; vertical-align: middle;" data-toggle="button" aria-pressed="false" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-thumbs-down"></span>
-              </a>
-              <a href="#" id="vote-up" style="display: inline-block; vertical-align: middle;" data-toggle="button" aria-pressed="false" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-thumbs-up"></span>
-              </a>
-            </div>
-          </div>
-          <input style="padding-top: 30px;" id="zone" type="text"
-              data-provide="slider"
-              data-slider-ticks="[1, 2, 3]"
-              data-slider-ticks-labels='["Innerstan", "Utanför tullarna", "Världens ände"]'
-              data-slider-min="1"
-              data-slider-max="3"
-              data-slider-step="1"
-              data-slider-value="2"
-              data-slider-tooltip="hide" />
-        </div>
-        <a style="margin-top: 30px;" href="#" id="generate" class="btn btn-info btn-lg">Slumpa!</a>
-      </div>
-    </div>
-
+    {% block body %}
+    {% endblock %}
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap-slider.min.js') }}"></script>
