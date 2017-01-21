@@ -11,14 +11,14 @@
     "longitude": "18.039432000000033",
     "latitude": "59.392321",
     "line": "Röda",
-    "zone": "3"
+    "zone": "2"
   },
   {
     "name": "Bergshamra",
     "longitude": "18.032709599999976",
     "latitude": "59.3803526",
     "line": "Röda",
-    "zone": "3"
+    "zone": "2"
   },
   {
     "name": "Universitetet",
@@ -136,6 +136,104 @@
     "name": "Fruängen",
     "longitude": "17.96500579999997",
     "latitude": "59.285929",
+    "line": "Röda",
+    "zone": "3"
+  },
+  {
+    "name": "Aspudden",
+    "longitude": "18.001155799999992",
+    "latitude": "59.306416",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Örnsberg",
+    "longitude": "17.98919980000005",
+    "latitude": "59.3055324",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Axelsberg",
+    "longitude": "17.97491869999999",
+    "latitude": "59.30436109999999",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Mälarhöjden",
+    "longitude": "17.957281999999964",
+    "latitude": "59.3009181",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Bredäng",
+    "longitude": "17.933813600000008",
+    "latitude": "59.29483829999999",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Sätra",
+    "longitude": "17.90889160000006",
+    "latitude": "59.28669840000001",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Skärholmen",
+    "longitude": "17.907005099999992",
+    "latitude": "59.27714400000001",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Vårberg",
+    "longitude": "17.87310219999995",
+    "latitude": "59.2798793",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Vårby gård",
+    "longitude": "17.88439740000001",
+    "latitude": "59.2646124",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Masmo",
+    "longitude": "17.880332599999974",
+    "latitude": "59.2496816",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Fittja",
+    "longitude": "17.86096759999998",
+    "latitude": "59.24746560000001",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Alby",
+    "longitude": "17.84532809999996",
+    "latitude": "59.2394955",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Hallunda",
+    "longitude": "17.824900699999944",
+    "latitude": "59.2440703",
+    "line": "Röda",
+    "zone": "2"
+  },
+  {
+    "name": "Norsborg",
+    "longitude": "17.814525199999935",
+    "latitude": "59.24379089999999",
     "line": "Röda",
     "zone": "3"
   }

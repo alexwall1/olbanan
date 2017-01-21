@@ -47,7 +47,7 @@ def root():
 def bar():
     zone = request.args.get('zone')
     if not zone:
-        abort(404)
+        abort(400)
     bar_found = None
     with open(PROJECT_DIR + 'stations.json') as f:
         all_stations = json.load(f)

@@ -9,25 +9,32 @@ $(document).ready(function() {
         $('#header').hide();
         $('#error-image').hide();
         $('#result').hide();
+        $('#vote-up').removeClass('active');
+        $('#vote-down').removeClass('active');
 
         $('#loading-image').show();
         var zone = $('#zone').slider('getValue');
+
         $.ajax({
             url: '/bar?zone=' + zone,
             dataType: 'json',
             success: function(data) {
                 $('#loading-image').hide();
-                var companyName = $('#company-name');
-                companyName.html(data.companyInfo.companyName);
+
+                var $companyName = $('#company-name');
+                $companyName.html(data.companyInfo.companyName);
                 var url = null;
 
                 if (data.homepage != null) {
                     url = data.homepage;
+                } else if (data.facebook != null) {
+                    url = data.facebook;
                 } else {
-                    url = data.infoPageLink;
+                    url = data.companyReviews;
                 }
 
-                companyName.attr("href", url);
+                $companyName.attr("href", url);
+
                 $('#station').html(data.station.name);
 
                 var bar = {
@@ -35,7 +42,7 @@ $(document).ready(function() {
                     'vote': 0,
                     'name': data.companyInfo.companyName,
                     'facebook': data.facebook,
-                    'homepage': data.homapage,
+                    'homepage': data.homepage,
                     'companyReviews': data.companyReviews,
                     'station': data.station.name,
                     'line': data.station.line,
@@ -55,7 +62,6 @@ $(document).ready(function() {
                 $('#vote-up').click(function() {
                     $('#vote-down').removeClass('active');
                     if ($(this).hasClass('active')) {
-                        // $(this).removeClass('active');
                         voteDown();
                     } else {
                         voteUp();
@@ -64,12 +70,12 @@ $(document).ready(function() {
                 $('#vote-down').click(function() {
                     $('#vote-up').removeClass('active');
                     if ($(this).hasClass('active')) {
-                        // $(this).removeClass('active');
                         voteUp();
                     } else {
                         voteDown();
                     }
                 });
+
                 $('#result').show();
             },
             error: function() {
