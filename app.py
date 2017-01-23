@@ -55,6 +55,8 @@ def bar():
     if not zone:
         abort(400)
     bar_found = None
+    bad_bars = [x for (x,) in db.session.query(Bar.eniro_id).filter(Bar.vote < 0).all()]
+
     with open(PROJECT_DIR + 'stations.json') as f:
         all_stations = json.load(f)
         stations = [x for x in all_stations if x['zone'] == zone]
@@ -71,7 +73,11 @@ def bar():
             if hits > 0:
                 r2 = random.randrange(0, min(hits, 25))
                 bar_found = obj['adverts'][r2]
-                bar_found['station'] = stations[r1]
+                eniro_id = long(bar_found['eniroId'])
+                if eniro_id not in bad_bars:
+                    bar_found['station'] = stations[r1]
+                else:
+                    bar_found = None
         if not bar_found:
             abort(404)
     return json.dumps(bar_found, indent=4)

@@ -6,26 +6,22 @@
           <br>
           <div id="header">
             <img src="{{ url_for('static', filename='images/metro.png') }}" height="150" width="150" />
-            <p class="lead">Trött på nödiga hipsterhak i innerstaden?<br>Slumpa fram en hemlig bar i orten.</p>
+            <p class="lead results-element">Trött på nödiga hipsterhak i innerstaden?<br>Slumpa fram en hemlig bar i orten.</p>
           </div>
-          <div><img id="error-image" src="{{ url_for('static', filename='images/error.png') }}" style="display: none; padding-top: 30px; padding-bottom: 30px;" height="150" width="150" /></div>
-          <div><img id="loading-image" style="display: none; padding-top: 30px; padding-bottom: 30px;" src="{{ url_for('static', filename='images/loading.gif') }}" /></div>
+          <div><img id="error-image" src="{{ url_for('static', filename='images/error.png') }}" height="150" width="150" /></div>
+          <div><img id="loading-image" src="{{ url_for('static', filename='images/loading.gif') }}" /></div>
           <div id="result" style="display: none;">
-            <h3><span class="label label-info"><a id="company-name" target="_blank" href="#"></a></span></h3>
-            <div style="padding-top:20px;">
-              <img style="display: inline-block; vertical-align: middle;" src="{{ url_for('static', filename='images/metro.png') }}" height="40" width="40" />
-              <h4 style="display: inline-block; vertical-align: middle;" id="station"></h4>
+            <h3><span class="label label-info results-element"><a id="company-name" target="_blank" href="#"></a></span></h3>
+            <div class="results-element">
+              <img src="{{ url_for('static', filename='images/metro.png') }}" height="40" width="40" />
+              <h4 id="station"></h4>
             </div>
-            <div style="padding-top: 30px; padding-bottom: 30px;">
-              <a href="#" id="vote-down" style="display: inline-block; vertical-align: middle;" data-toggle="button" aria-pressed="false" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-thumbs-down"></span>
-              </a>
-              <a href="#" id="vote-up" style="display: inline-block; vertical-align: middle;" data-toggle="button" aria-pressed="false" class="btn btn-info btn-lg">
-                <span class="glyphicon glyphicon-thumbs-up"></span>
-              </a>
+            <div id="buttons" class="results-element">
+              <button id="vote-up" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+              <button id="vote-down" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span></button>
             </div>
           </div>
-          <input style="padding-top: 30px;" id="zone" type="text"
+          <input id="zone" class="results-element" type="text"
               data-provide="slider"
               data-slider-ticks="[1, 2, 3]"
               data-slider-ticks-labels='["Innerstan", "Utanför tullarna", "Världens ände"]'
@@ -34,8 +30,18 @@
               data-slider-step="1"
               data-slider-value="2"
               data-slider-tooltip="hide" />
+          <!--<br><br>-->
+          <!--<input id="line" class="results-element" type="text"-->
+              <!--data-provide="slider"-->
+              <!--data-slider-ticks="[1, 2, 3, 4]"-->
+              <!--data-slider-ticks-labels='["Alla", "Gröna", "Röda", "Blå"]'-->
+              <!--data-slider-min="1"-->
+              <!--data-slider-max="4"-->
+              <!--data-slider-step="1"-->
+              <!--data-slider-value="1"-->
+              <!--data-slider-tooltip="hide" />-->
+          <br><button id="generate" class="btn btn-info btn-lg results-element">Slumpa!</button>
         </div>
-        <a style="margin-top: 30px;" href="#" id="generate" class="btn btn-info btn-lg">Slumpa!</a>
       </div>
     </div>
 {% endblock %}

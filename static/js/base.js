@@ -1,16 +1,31 @@
 $(document).ready(function() {
-    $('#ex19').slider({
-        formatter: function(value) {
-            return 'Current value: ' + value;
-        }
-    });
+    var bindButtons = function(bar) {
+        var $buttons = $('#buttons button');
+        $buttons.removeClass('active');
+
+        $buttons.unbind('click');
+        $buttons.on('click', function(e) {
+            if (!$(this).hasClass('active')) {
+                var $this = $(this).addClass('active'),
+                isNo = $this.is('#vote-up');
+
+                var vote = 0;
+                if (isNo) {
+                    vote = -1;
+                } else {
+                    vote = 1;
+                }
+
+                bar.vote = vote;
+                $.post('/vote', bar);
+            }
+        });
+    };
 
     $('#generate').click(function() {
         $('#header').hide();
         $('#error-image').hide();
         $('#result').hide();
-        $('#vote-up').removeClass('active');
-        $('#vote-down').removeClass('active');
 
         $('#loading-image').show();
         var zone = $('#zone').slider('getValue');
@@ -34,7 +49,6 @@ $(document).ready(function() {
                 }
 
                 $companyName.attr("href", url);
-
                 $('#station').html(data.station.name);
 
                 var bar = {
@@ -49,32 +63,7 @@ $(document).ready(function() {
                     'zone': data.station.zone
                 };
 
-                var voteDown = function() {
-                    bar.vote = -1;
-                    $.post('/vote', bar);
-                };
-
-                var voteUp = function() {
-                    bar.vote = 1;
-                    $.post('/vote', bar);
-                };
-
-                $('#vote-up').click(function() {
-                    $('#vote-down').removeClass('active');
-                    if ($(this).hasClass('active')) {
-                        voteDown();
-                    } else {
-                        voteUp();
-                    }
-                });
-                $('#vote-down').click(function() {
-                    $('#vote-up').removeClass('active');
-                    if ($(this).hasClass('active')) {
-                        voteUp();
-                    } else {
-                        voteDown();
-                    }
-                });
+                bindButtons(bar);
 
                 $('#result').show();
             },

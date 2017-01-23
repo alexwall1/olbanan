@@ -2,6 +2,36 @@
  * Globals
  */
 
+#line .slider-selection {
+    background: green;
+}
+
+button {
+    cursor: pointer;
+}
+
+.results-element {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#error-image {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#loading-image {
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#station {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* Links */
 a,
 a:focus,
