@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import json
 import urllib
 import random
@@ -52,14 +54,18 @@ def root():
 @app.route("/bar")
 def bar():
     zone = request.args.get('zone')
-    if not zone:
+    if not zone or not request.args.get('line'):
         abort(400)
+
+    line = ["Alla", "Gröna", "Röda", "Blå"][int(request.args.get('line')) - 1]
+    print line
+
     bar_found = None
     bad_bars = [x for (x,) in db.session.query(Bar.eniro_id).filter(Bar.vote < 0).all()]
 
     with open(PROJECT_DIR + 'stations.json') as f:
         all_stations = json.load(f)
-        stations = [x for x in all_stations if x['zone'] == zone]
+        stations = [x for x in all_stations if x["zone"] == zone and (line == "Alla" or line.decode('utf-8') in x["line"])]
         n = len(stations)
         c = 0
         while c < 3 and not bar_found:

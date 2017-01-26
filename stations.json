@@ -3,238 +3,679 @@
     "name": "Mörby centrum",
     "longitude": "18.036117500000046",
     "latitude": "59.3982573",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "3"
   },
   {
     "name": "Danderyds sjukhus",
     "longitude": "18.039432000000033",
     "latitude": "59.392321",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Bergshamra",
     "longitude": "18.032709599999976",
     "latitude": "59.3803526",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Universitetet",
     "longitude": "18.054604400000017",
     "latitude": "59.3651918",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Tekniska högskolan",
     "longitude": "18.071596399999976",
     "latitude": "59.3459088",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "Stadion",
     "longitude": "18.081700700000056",
     "latitude": "59.3429669",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "Östermalmstorg",
     "longitude": "18.074082699999963",
     "latitude": "59.3349729",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "T-centralen",
     "longitude": "18.059524399999987",
     "latitude": "59.3306725",
-    "line": "Alla",
-    "zone": "1"
-  },
-  {
-    "name": "Tekniska högskolan",
-    "longitude": "18.071596399999976",
-    "latitude": "59.3459088",
-    "line": "Röda",
+    "line": ["Röda", "Gröna", "Blå"],
     "zone": "1"
   },
   {
     "name": "Gamla stan",
     "longitude": "18.067620300000044",
     "latitude": "59.3231599",
-    "line": "Röda",
+    "line": ["Röda", "Gröna"],
     "zone": "1"
   },
   {
     "name": "Slussen",
     "longitude": "18.07214060000001",
     "latitude": "59.31951240000001",
-    "line": "Röda",
+    "line": ["Röda", "Gröna"],
     "zone": "1"
   },
   {
     "name": "Mariatorget",
     "longitude": "18.06324840000002",
     "latitude": "59.3169863",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "Zinkensdamm",
     "longitude": "18.050152199999957",
     "latitude": "59.3177777",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "Hornstull",
     "longitude": "18.03402140000003",
     "latitude": "59.3158365",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "1"
   },
   {
     "name": "Liljeholmen",
     "longitude": "18.023130100000003",
     "latitude": "59.3107063",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Midsommarkransen",
     "longitude": "18.012036099999932",
     "latitude": "59.301852",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Telefonplan",
     "longitude": "17.997235199999977",
     "latitude": "59.29832139999999",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Hägerstensåsen",
     "longitude": "17.979151900000033",
     "latitude": "59.2955713",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Västertorp",
     "longitude": "17.96666749999997",
     "latitude": "59.291379",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Fruängen",
     "longitude": "17.96500579999997",
     "latitude": "59.285929",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "3"
   },
   {
     "name": "Aspudden",
     "longitude": "18.001155799999992",
     "latitude": "59.306416",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Örnsberg",
     "longitude": "17.98919980000005",
     "latitude": "59.3055324",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Axelsberg",
     "longitude": "17.97491869999999",
     "latitude": "59.30436109999999",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Mälarhöjden",
     "longitude": "17.957281999999964",
     "latitude": "59.3009181",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Bredäng",
     "longitude": "17.933813600000008",
     "latitude": "59.29483829999999",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Sätra",
     "longitude": "17.90889160000006",
     "latitude": "59.28669840000001",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Skärholmen",
     "longitude": "17.907005099999992",
     "latitude": "59.27714400000001",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Vårberg",
     "longitude": "17.87310219999995",
     "latitude": "59.2798793",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Vårby gård",
     "longitude": "17.88439740000001",
     "latitude": "59.2646124",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Masmo",
     "longitude": "17.880332599999974",
     "latitude": "59.2496816",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Fittja",
     "longitude": "17.86096759999998",
     "latitude": "59.24746560000001",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Alby",
     "longitude": "17.84532809999996",
     "latitude": "59.2394955",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Hallunda",
     "longitude": "17.824900699999944",
     "latitude": "59.2440703",
-    "line": "Röda",
+    "line": ["Röda"],
     "zone": "2"
   },
   {
     "name": "Norsborg",
     "longitude": "17.814525199999935",
     "latitude": "59.24379089999999",
-    "line": "Röda",
+    "line": ["Röda"],
+    "zone": "3"
+  },
+  {
+    "name": "Hässelby strand",
+    "longitude": "17.83235179999997",
+    "latitude": "59.36128660000001",
+    "line": ["Gröna"],
+    "zone": "3"
+  },
+  {
+    "name": "Hässelby gård",
+    "longitude": "17.843769199999997",
+    "latitude": "59.3669003",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Johannelund",
+    "longitude": "17.85746549999999",
+    "latitude": "59.3679426",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Vällingby",
+    "longitude": "17.87206309999999",
+    "latitude": "59.36324949999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Rocksta",
+    "longitude": "17.881819800000017",
+    "latitude": "59.3548066",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Blackeberg",
+    "longitude": "17.882797200000027",
+    "latitude": "59.3483529",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Islandstorget",
+    "longitude": "17.89401959999998",
+    "latitude": "59.34585689999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Ängbyplan",
+    "longitude": "17.907047799999987",
+    "latitude": "59.34188520000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Åkeshov",
+    "longitude": "17.92489980000005",
+    "latitude": "59.3420363",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Brommaplan",
+    "longitude": "17.939261699999975",
+    "latitude": "59.33838979999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Abrahamsberg",
+    "longitude": "17.952952200000027",
+    "latitude": "59.33668340000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Stora mossen",
+    "longitude": "17.96619140000007",
+    "latitude": "59.334534",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Alvik",
+    "longitude": "17.980264600000055",
+    "latitude": "59.3336355",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Kristineberg",
+    "longitude": "18.003182000000038",
+    "latitude": "59.33281110000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Thorildsplan",
+    "longitude": "18.014882599999964",
+    "latitude": "59.3314735",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Fridhemsplan",
+    "longitude": "18.029187800000045",
+    "latitude": "59.33219949999999",
+    "line": ["Gröna", "Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Sankt eriksplan",
+    "longitude": "18.036987700000054",
+    "latitude": "59.3396541",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Odenplan",
+    "longitude": "18.049890900000037",
+    "latitude": "59.3429601",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Rådmansgatan",
+    "longitude": "18.059198299999935",
+    "latitude": "59.34032589999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Hötorget",
+    "longitude": "18.06311400000004",
+    "latitude": "59.3353344",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Medborgarplatsen",
+    "longitude": "18.073550999999952",
+    "latitude": "59.31433730000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Skanstull",
+    "longitude": "18.075769100000002",
+    "latitude": "59.3078304",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Gullmarsplan",
+    "longitude": "18.080944899999963",
+    "latitude": "59.2990447",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Globen",
+    "longitude": "18.07797419999997",
+    "latitude": "59.2942798",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Enskede gård",
+    "longitude": "18.070293900000024",
+    "latitude": "59.2893938",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Sockenplan",
+    "longitude": "18.0705911",
+    "latitude": "59.28330020000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Svedmyra",
+    "longitude": "18.067232099999956",
+    "latitude": "59.27763840000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Stureby",
+    "longitude": "18.055626200000006",
+    "latitude": "59.27459769999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Bandhagen",
+    "longitude": "18.049490200000037",
+    "latitude": "59.2704022",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Högdalen",
+    "longitude": "18.043004699999983",
+    "latitude": "59.2637969",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Rågsved",
+    "longitude": "18.02813489999994",
+    "latitude": "59.2565804",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Hagsätra",
+    "longitude": "18.012487400000055",
+    "latitude": "59.26272840000001",
+    "line": ["Gröna"],
+    "zone": "3"
+  },
+      {
+    "name": "Skärmarbrink",
+    "longitude": "18.090440899999976",
+    "latitude": "59.2953638",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Blåsut",
+    "longitude": "18.09106309999993",
+    "latitude": "59.2902433",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+        {
+    "name": "Sandsborg",
+    "longitude": "18.09238210000001",
+    "latitude": "59.2847872",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Skogskyrkogården",
+    "longitude": "18.09549889999994",
+    "latitude": "59.27919180000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Tallkrogen",
+    "longitude": "18.085326699999996",
+    "latitude": "59.2711356",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Gubbängen",
+    "longitude": "18.082088",
+    "latitude": "59.2634681",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+    {
+    "name": "Hökarängen",
+    "longitude": "18.082497399999966",
+    "latitude": "59.2579216",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Farsta",
+    "longitude": "18.09328389999996",
+    "latitude": "59.243553",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+      {
+    "name": "Farsta strand",
+    "longitude": "18.10173689999999",
+    "latitude": "59.23500769999999",
+    "line": ["Gröna"],
+    "zone": "3"
+  },
+  {
+    "name": "Hammarbyhöjden",
+    "longitude": "18.10455060000004",
+    "latitude": "59.29476529999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Björkhagen",
+    "longitude": "18.11552119999999",
+    "latitude": "59.29111390000001",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Kärrtorp",
+    "longitude": "18.11447670000007",
+    "latitude": "59.2845051",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Bagarmossen",
+    "longitude": "18.131464999999935",
+    "latitude": "59.27626429999999",
+    "line": ["Gröna"],
+    "zone": "2"
+  },
+  {
+    "name": "Skarpnäck",
+    "longitude": "18.13303589999998",
+    "latitude": "59.2664138",
+    "line": ["Gröna"],
+    "zone": "3"
+  },
+  {
+    "name": "Kungsträdgården",
+    "longitude": "18.073293799999988",
+    "latitude": "59.33078399999999",
+    "line": ["Blå"],
+    "zone": "3"
+  },
+  {
+    "name": "Rådhuset",
+    "longitude": "18.042047700000012",
+    "latitude": "59.33033229999999",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+    {
+    "name": "Stadshagen",
+    "longitude": "18.015419399999928",
+    "latitude": "59.3377607",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+    {
+    "name": "Västra skogen",
+    "longitude": "18.003989100000013",
+    "latitude": "59.3474793",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+    {
+    "name": "Huvudsta",
+    "longitude": "17.98569539999994",
+    "latitude": "59.3495465",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Vreten",
+    "longitude": "17.97354169999994",
+    "latitude": "59.35434249999999",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Sundbybergs cetrum",
+    "longitude": "17.97127069999999",
+    "latitude": "59.3621927",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Duvbo",
+    "longitude": "17.96461750000003",
+    "latitude": "59.3678923",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+        {
+    "name": "Rissne",
+    "longitude": "17.939959300000055",
+    "latitude": "59.37584080000001",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+        {
+    "name": "Rinkeby",
+    "longitude": "17.928781399999934",
+    "latitude": "59.3881634",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+        {
+    "name": "Tensta",
+    "longitude": "17.901165200000037",
+    "latitude": "59.3944823",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+  {
+    "name": "Hjulsta",
+    "longitude": "17.887712100000044",
+    "latitude": "59.3961702",
+    "line": ["Blå"],
+    "zone": "3"
+  },
+    {
+    "name": "Solna centrum",
+    "longitude": "17.998973699999965",
+    "latitude": "59.3588602",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+    {
+    "name": "Näckrosen",
+    "longitude": "17.983279700000026",
+    "latitude": "59.3667379",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+    {
+    "name": "Hallonbergen",
+    "longitude": "17.969215299999973",
+    "latitude": "59.3754487",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Kista",
+    "longitude": "17.942394400000012",
+    "latitude": "59.4031774",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Husby",
+    "longitude": "17.925637199999983",
+    "latitude": "59.410259",
+    "line": ["Blå"],
+    "zone": "2"
+  },
+      {
+    "name": "Akalla",
+    "longitude": "17.912797400000045",
+    "latitude": "59.41481289999999",
+    "line": ["Blå"],
     "zone": "3"
   }
 ]
