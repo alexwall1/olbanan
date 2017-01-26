@@ -40,6 +40,7 @@ $(document).ready(function() {
                 } else {
                     url = data.companyReviews;
                 }
+                $('#google-maps-link').attr('href', 'http://maps.google.com/?q=' + data.companyInfo.companyName);
                 $companyName.attr("href", url);
                 $('#station').html(data.station.name);
                 var bar = {
