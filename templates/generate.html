@@ -11,7 +11,7 @@
           <div><img id="error-image" src="{{ url_for('static', filename='images/error.png') }}" height="150" width="150" /></div>
           <div><img id="loading-image" src="{{ url_for('static', filename='images/loading.gif') }}" /></div>
           <div id="result" style="display: none;">
-            <h3><span class="label label-info results-element"><a id="company-name" target="_blank" href="#"></a></span></h3>
+            <h3 id="company-name-element"><span class="label label-info results-element"><a id="company-name" target="_blank" href="#"></a></span></h3>
             <div class="results-element">
                 <img src="{{ url_for('static', filename='images/metro.png') }}" height="40" width="40" />
                 <a href="#" target="_new" id="google-maps-link"><h4 id="station"></h4></a>
@@ -41,6 +41,7 @@
               data-slider-value="1"
               data-slider-tooltip="hide" />
           <br><button id="generate" class="btn btn-info btn-lg results-element">Slumpa!</button>
+          <span class="glyphicon glyphicon-globe" id="globe"></span>
         </div>
       </div>
     </div>

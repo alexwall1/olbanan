@@ -23,7 +23,6 @@ class Bar(db.Model):
     homepage = db.Column(db.String(255), nullable=True)
     company_reviews = db.Column(db.String(255), nullable=True)
     station = db.Column(db.String(255), nullable=False)
-    line = db.Column(db.String(255), nullable=False)
     zone = db.Column(db.Integer, nullable=False)
 
 
@@ -58,7 +57,6 @@ def bar():
         abort(400)
 
     line = ["Alla", "Gröna", "Röda", "Blå"][int(request.args.get('line')) - 1]
-    print line
 
     bar_found = None
     bad_bars = [x for (x,) in db.session.query(Bar.eniro_id).filter(Bar.vote < 0).all()]
@@ -114,7 +112,6 @@ def vote():
         b.homepage = request.form.get('homepage')
         b.company_reviews = request.form.get('companyReviews')
         b.station = request.form.get('station')
-        b.line = request.form.get('line')
         b.zone = int(request.form.get('zone'))
         db.session.add(b)
     db.session.commit()

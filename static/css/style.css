@@ -37,6 +37,10 @@ button {
     vertical-align: middle;
 }
 
+#globe {
+    display: none;
+}
+
 /* Links */
 a,
 a:focus,

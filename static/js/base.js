@@ -35,6 +35,7 @@ $(document).ready(function() {
                 var url = null;
                 if (data.homepage != null) {
                     url = data.homepage;
+//                    $('#globe').clone().appendTo('#company-name-element').removeClass('')
                 } else if (data.facebook != null) {
                     url = data.facebook;
                 } else {
@@ -51,7 +52,6 @@ $(document).ready(function() {
                     'homepage': data.homepage,
                     'companyReviews': data.companyReviews,
                     'station': data.station.name,
-                    'line': data.station.line,
                     'zone': data.station.zone
                 };
                 bindButtons(bar);
