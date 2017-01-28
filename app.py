@@ -41,7 +41,7 @@ def build_query(latitude, longitude, search_word='restaurang', max_distance='300
 
 @app.route("/ranking")
 def ranking():
-    bars = Bar.query.order_by(Bar.vote.desc()).limit(10).all()
+    bars = Bar.query.order_by(Bar.vote.desc()).all()
     return render_template('ranking.html', bars=bars)
 
 
