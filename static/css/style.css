@@ -41,6 +41,19 @@ button {
     display: none;
 }
 
+.slider-tick {
+    opacity: 0.8 !important;
+}
+
+.slider-selection.tick-slider-selection {
+    background-image: none !important;
+}
+
+.slider-tick.in-selection {
+    background-image: linear-gradient(to bottom,#f9f9f9 0,#f5f5f5 100%) !important;
+}
+
+
 /* Links */
 a,
 a:focus,
