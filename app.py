@@ -3,28 +3,16 @@
 import json
 import urllib
 import random
+import os
 
 from flask import Flask, render_template, request, abort
-from flask_sqlalchemy import SQLAlchemy
-from config import profile, key, DATABASE_URI, DEBUG, PROJECT_DIR
+from database import db_session
+from models import Bar
+from config import profile, key
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
-db = SQLAlchemy(app)
 
-
-class Bar(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    eniro_id = db.Column(db.Integer, nullable=False)
-    vote = db.Column(db.Integer, nullable=False)
-    name = db.Column(db.String(255), nullable=False)
-    facebook = db.Column(db.String(255), nullable=True)
-    homepage = db.Column(db.String(255), nullable=True)
-    company_reviews = db.Column(db.String(255), nullable=True)
-    station = db.Column(db.String(255), nullable=False)
-    zone = db.Column(db.Integer, nullable=False)
-
+PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def build_query(latitude, longitude, search_word='restaurang', max_distance='300'):
     return urllib.urlencode({
@@ -59,9 +47,9 @@ def bar():
     line = ["Alla", "Gröna", "Röda", "Blå"][int(request.args.get('line')) - 1]
 
     bar_found = None
-    bad_bars = [x for (x,) in db.session.query(Bar.eniro_id).filter(Bar.vote < 0).all()]
+    bad_bars = [x for (x,) in db_session.query(Bar.eniro_id).filter(Bar.vote < 0).all()]
 
-    with open(PROJECT_DIR + 'stations.json') as f:
+    with open(os.path.join(PROJECT_DIR,'stations.json')) as f:
         all_stations = json.load(f)
         stations = [x for x in all_stations if x["zone"] == zone and (line == "Alla" or line.decode('utf-8') in x["line"])]
         n = len(stations)
@@ -113,8 +101,8 @@ def vote():
         b.company_reviews = request.form.get('companyReviews')
         b.station = request.form.get('station')
         b.zone = int(request.form.get('zone'))
-        db.session.add(b)
-    db.session.commit()
+        db_session.add(b)
+    db_session.commit()
     return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
 
 
