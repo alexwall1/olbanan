@@ -107,4 +107,4 @@ def vote():
 
 
 if __name__ == "__main__":
-    app.run(debug=DEBUG)
+    app.run()

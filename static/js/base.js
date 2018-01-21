@@ -14,7 +14,7 @@ $(document).ready(function() {
                     vote = 1;
                 }
                 bar.vote = vote;
-                $.post('/vote', bar);
+                $.post('/olbanan/vote', bar);
             }
         });
     };
@@ -26,7 +26,7 @@ $(document).ready(function() {
         var zone = $('#zone').slider('getValue');
         var line = $('#line').slider('getValue');
         $.ajax({
-            url: '/bar?zone=' + zone + '&line=' + line,
+            url: '/olbanan/bar?zone=' + zone + '&line=' + line,
             dataType: 'json',
             success: function(data) {
                 $('#loading-image').hide();
@@ -35,7 +35,6 @@ $(document).ready(function() {
                 var url = null;
                 if (data.homepage != null) {
                     url = data.homepage;
-//                    $('#globe').clone().appendTo('#company-name-element').removeClass('')
                 } else if (data.facebook != null) {
                     url = data.facebook;
                 } else {
