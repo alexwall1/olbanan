@@ -14,7 +14,7 @@ $(document).ready(function() {
                     vote = 1;
                 }
                 bar.vote = vote;
-                $.post('/olbanan/vote', bar);
+                $.post('/vote', bar);
             }
         });
     };
@@ -26,7 +26,7 @@ $(document).ready(function() {
         var zone = $('#zone').slider('getValue');
         var line = $('#line').slider('getValue');
         $.ajax({
-            url: '/olbanan/bar?zone=' + zone + '&line=' + line,
+            url: '/bar?zone=' + zone + '&line=' + line,
             dataType: 'json',
             success: function(data) {
                 $('#loading-image').hide();

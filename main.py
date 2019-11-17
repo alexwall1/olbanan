@@ -15,7 +15,7 @@ app = Flask(__name__)
 PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def build_query(latitude, longitude, search_word='restaurang', max_distance='300'):
-    return urllib.urlencode({
+    return urllib.parse.urlencode({
         'profile': profile,
         'key': key,
         'country': 'se',
@@ -51,21 +51,21 @@ def bar():
 
     with open(os.path.join(PROJECT_DIR,'stations.json')) as f:
         all_stations = json.load(f)
-        stations = [x for x in all_stations if x["zone"] == zone and (line == "Alla" or line.decode('utf-8') in x["line"])]
+        stations = [x for x in all_stations if x["zone"] == zone and (line == "Alla" or line in x["line"])]
         n = len(stations)
         c = 0
         while c < 3 and not bar_found:
             c += 1
             r1 = random.randrange(0, n)
             params = build_query(stations[r1]["latitude"], stations[r1]["longitude"])
-            u = urllib.urlopen("https://api.eniro.com/cs/proximity/basic?%s" % params)
+            u = urllib.request.urlopen("https://api.eniro.com/cs/proximity/basic?%s" % params)
             data = u.read()
             obj = json.loads(data)
             hits = obj['totalHits']
             if hits > 0:
                 r2 = random.randrange(0, min(hits, 25))
                 bar_found = obj['adverts'][r2]
-                eniro_id = long(bar_found['eniroId'])
+                eniro_id = int(bar_found['eniroId'])
                 if eniro_id not in bad_bars:
                     bar_found['station'] = stations[r1]
                 else:
